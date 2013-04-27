@@ -35,5 +35,5 @@
 
   >>
 
-  \include "../../include/pp_layout.ly"
+  \include "../include/pp_layout.ly"
 }
