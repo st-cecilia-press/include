@@ -1,6 +1,6 @@
 \midi {
   \context {
     \Score
-    tempoWholesPerMinute = \ppTempo
+    tempoWholesPerMinute = \scTempo
   }
 }

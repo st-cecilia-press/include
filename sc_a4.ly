@@ -8,36 +8,36 @@
            \set chordNameExceptions = #chExceptions
            \set ChordNames.midiInstrument = #"harpsichord"
            << 
-             \global \transpose c' c \ppChordLine 
+             \global \transpose c' c \scChordLine 
            >>
          }
    
          \new Staff \with { \consists "Volta_engraver" }
-         \context Voice = ppvOne {
+         \context Voice = scvOne {
            \set Score.markFormatter = #format-mark-box-letters
            << \set Staff.midiInstrument = #"oboe"
-           \global \scMusicOneClefOrig \ppMusicOne 	 >> 
+           \global \scMusicOneClefOrig \scMusicOne 	 >> 
          }
-         \context Voice = ppvTwo { 
+         \context Voice = scvTwo { 
            << \set Staff.midiInstrument = #"oboe"
-           \global \scMusicTwoClefOrig \ppMusicTwo >> 
-         }
-   
-         \context Voice = ppvThree { 
-           << \set Staff.midiInstrument = #"oboe"
-           \global \scMusicThreeClefOrig \ppMusicThree >> 
+           \global \scMusicTwoClefOrig \scMusicTwo >> 
          }
    
-         \context Voice = ppvFour { 
+         \context Voice = scvThree { 
            << \set Staff.midiInstrument = #"oboe"
-           \global \scMusicFourClefOrig \ppMusicFour >> 
+           \global \scMusicThreeClefOrig \scMusicThree >> 
+         }
+   
+         \context Voice = scvFour { 
+           << \set Staff.midiInstrument = #"oboe"
+           \global \scMusicFourClefOrig \scMusicFour >> 
          }
    
        >>
    
      >>
    
-     \include "../include/pp_layout.ly"
+     \include "../include/sc_layout.ly"
      \include "../include/sc_midi.ly"
    }
 }
@@ -51,35 +51,35 @@
            \set chordNameExceptions = #chExceptions
            \set ChordNames.midiInstrument = #"harpsichord"
            << 
-             \global \transpose c' c \ppChordLine 
+             \global \transpose c' c \scChordLine 
            >>
          }
    
          \new Staff \with { \consists "Volta_engraver" }
-         \context Voice = ppvOne {
+         \context Voice = scvOne {
            \set Score.markFormatter = #format-mark-box-letters
            << \set Staff.midiInstrument = #"oboe"
-           \global \scMusicOneClefModern \ppMusicOne 	 >> 
+           \global \scMusicOneClefModern \scMusicOne 	 >> 
          }
-         \context Voice = ppvTwo { 
+         \context Voice = scvTwo { 
            << \set Staff.midiInstrument = #"oboe"
-           \global \scMusicTwoClefModern \ppMusicTwo >> 
-         }
-   
-         \context Voice = ppvThree { 
-           << \set Staff.midiInstrument = #"oboe"
-           \global \scMusicThreeClefModern \ppMusicThree >> 
+           \global \scMusicTwoClefModern \scMusicTwo >> 
          }
    
-         \context Voice = ppvFour { 
+         \context Voice = scvThree { 
            << \set Staff.midiInstrument = #"oboe"
-           \global \scMusicFourClefModern \ppMusicFour >> 
+           \global \scMusicThreeClefModern \scMusicThree >> 
+         }
+   
+         \context Voice = scvFour { 
+           << \set Staff.midiInstrument = #"oboe"
+           \global \scMusicFourClefModern \scMusicFour >> 
          }
    
        >>
    
      >>
    
-     \include "../include/pp_layout.ly"
+     \include "../include/sc_layout.ly"
    }
 }
