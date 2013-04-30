@@ -16,4 +16,3 @@
   ragged-bottom=##t
   ragged-last-bottom=##t
 }
-
