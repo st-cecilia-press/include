@@ -7,19 +7,19 @@
         \set chordNameExceptions = #chExceptions
         \set ChordNames.midiInstrument = #"harpsichord"
         << 
-          \global \transpose c' c \ppChordLine 
+          \global \transpose c' c \scChordLine 
         >>
       }
 
       \new Staff \with { \consists "Volta_engraver" }
-      \context Voice = ppvOne {
+      \context Voice = scvOne {
         \set Score.markFormatter = #format-mark-box-letters
         << \set Staff.midiInstrument = #"oboe"
-        \global \ppMusicOne 	 >> 
+        \global \scMusicOne 	 >> 
       }
     >>
 
   >>
 
-  \include "../include/pp_layout.ly"
+  \include "../include/sc_layout.ly"
 }

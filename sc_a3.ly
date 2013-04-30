@@ -7,29 +7,29 @@
         \set chordNameExceptions = #chExceptions
         \set ChordNames.midiInstrument = #"harpsichord"
         << 
-          \global \transpose c' c \ppChordLine 
+          \global \transpose c' c \scChordLine 
         >>
       }
 
       \new Staff \with { \consists "Volta_engraver" }
-      \context Voice = ppvOne {
+      \context Voice = scvOne {
         \set Score.markFormatter = #format-mark-box-letters
         << \set Staff.midiInstrument = #"oboe"
-        \global \ppMusicOne 	 >> 
+        \global \scMusicOne 	 >> 
       }
-      \context Voice = ppvTwo { 
+      \context Voice = scvTwo { 
         << \set Staff.midiInstrument = #"oboe"
-        \global \ppMusicTwo >> 
+        \global \scMusicTwo >> 
       }
 
-      \context Voice = ppvThree { 
+      \context Voice = scvThree { 
         << \set Staff.midiInstrument = #"oboe"
-        \global \ppMusicThree >> 
+        \global \scMusicThree >> 
       }
 
     >>
 
   >>
 
-  \include "../include/pp_layout.ly"
+  \include "../include/sc_layout.ly"
 }
