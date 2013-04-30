@@ -16,11 +16,3 @@
   ragged-bottom=##t
   ragged-last-bottom=##t
 }
-
-\midi {
-  \context {
-    \Score
-    tempoWholesPerMinute = \ppTempo
-  }
-}
-
