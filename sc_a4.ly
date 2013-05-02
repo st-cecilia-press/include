@@ -1,5 +1,14 @@
 \book {
    \bookOutputSuffix "orig_clef"
+   \header{                                                                
+     title = \scTitle
+     subtitle = \scSubtitle
+     meter = \scMeter
+     poet = \scPoet
+     composer = \scComposer
+     copyright = \scCopyright
+     tagline = \scTagline
+   }
    \score {
      <<
        \context ChoirStaff 
@@ -41,8 +50,18 @@
      \include "../include/sc_midi.ly"
    }
 }
+
 \book {
    \bookOutputSuffix "modern_clef"
+   \header{                                                                
+     title = \scTitle
+     subtitle = \scSubtitle
+     meter = \scMeter
+     poet = \scPoet
+     composer = \scComposer
+     copyright = \scCopyright
+     tagline = \scTagline
+   }
    \score {
      <<
        \context ChoirStaff 
