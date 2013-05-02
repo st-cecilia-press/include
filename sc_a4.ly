@@ -17,7 +17,7 @@
            \set chordNameExceptions = #chExceptions
            \set ChordNames.midiInstrument = #"harpsichord"
            << 
-             \global \transpose c' c \scChordLine 
+             \scGlobal \transpose c' c \scChordLine 
            >>
          }
    
@@ -25,21 +25,21 @@
          \context Voice = scvOne {
            \set Score.markFormatter = #format-mark-box-letters
            << \set Staff.midiInstrument = #"oboe"
-           \global \scMusicOneClefOrig \scMusicOne 	 >> 
+           \scGlobal \scMusicOneClefOrig \scMusicOne 	 >> 
          }
          \context Voice = scvTwo { 
            << \set Staff.midiInstrument = #"oboe"
-           \global \scMusicTwoClefOrig \scMusicTwo >> 
+           \scGlobal \scMusicTwoClefOrig \scMusicTwo >> 
          }
    
          \context Voice = scvThree { 
            << \set Staff.midiInstrument = #"oboe"
-           \global \scMusicThreeClefOrig \scMusicThree >> 
+           \scGlobal \scMusicThreeClefOrig \scMusicThree >> 
          }
    
          \context Voice = scvFour { 
            << \set Staff.midiInstrument = #"oboe"
-           \global \scMusicFourClefOrig \scMusicFour >> 
+           \scGlobal \scMusicFourClefOrig \scMusicFour >> 
          }
    
        >>
@@ -70,7 +70,7 @@
            \set chordNameExceptions = #chExceptions
            \set ChordNames.midiInstrument = #"harpsichord"
            << 
-             \global \transpose c' c \scChordLine 
+             \scGlobal \transpose c' c \scChordLine 
            >>
          }
    
@@ -78,21 +78,21 @@
          \context Voice = scvOne {
            \set Score.markFormatter = #format-mark-box-letters
            << \set Staff.midiInstrument = #"oboe"
-           \global \scMusicOneClefModern \scMusicOne 	 >> 
+           \scGlobal \scMusicOneClefModern \scMusicOne 	 >> 
          }
          \context Voice = scvTwo { 
            << \set Staff.midiInstrument = #"oboe"
-           \global \scMusicTwoClefModern \scMusicTwo >> 
+           \scGlobal \scMusicTwoClefModern \scMusicTwo >> 
          }
    
          \context Voice = scvThree { 
            << \set Staff.midiInstrument = #"oboe"
-           \global \scMusicThreeClefModern \scMusicThree >> 
+           \scGlobal \scMusicThreeClefModern \scMusicThree >> 
          }
    
          \context Voice = scvFour { 
            << \set Staff.midiInstrument = #"oboe"
-           \global \scMusicFourClefModern \scMusicFour >> 
+           \scGlobal \scMusicFourClefModern \scMusicFour >> 
          }
    
        >>
