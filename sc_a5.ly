@@ -44,7 +44,7 @@
 
          \context Voice = scvFive { 
            << \set Staff.midiInstrument = #"oboe"
-           \scGlobal \scMusicFive \scMusicFive >> 
+           \scGlobal \scMusicFiveClefOrig \scMusicFive >> 
          }
    
        >>
