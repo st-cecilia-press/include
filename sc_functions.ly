@@ -1,14 +1,8 @@
-\paper {
-  print-page-number = ##f
-  print-first-page-number = ##f
-  ragged-bottom = ##t
-  ragged-last-bottom = ##t
-
-}
 chExceptionMusic = {
   <c g>1-\markup { \super "5" }
 }
 
+filename = #(ly:parser-output-name parser)
 
 % Convert music to list and prepend to existing exceptions.
 chExceptions = #( append

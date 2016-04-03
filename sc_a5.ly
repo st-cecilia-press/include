@@ -1,113 +1,132 @@
 \book {
-   \bookOutputSuffix "orig_clef"
-   \header{                                                                
-     title = \scTitle
-     subtitle = \scSubtitle
-     meter = \scMeter
-     poet = \scPoet
-     composer = \scComposer
-     copyright = \scCopyright
-     tagline = \scTagline
-   }
-   \score {
-     <<
-       \context ChoirStaff 
-       <<
-         \context ChordNames = chordcontext { 
-           \set chordNameExceptions = #chExceptions
-           \set ChordNames.midiInstrument = #"harpsichord"
-           << 
-             \scGlobal \transpose c' c \scChordLine 
-           >>
+  \bookOutputName #(string-append filename "_orig_clef")
+  \include "../include/sc_paper.ly"
+  \header{                                                                
+    title = \scTitle
+    subtitle = \scSubtitle
+    meter = \scMeter
+    poet = \scPoet
+    composer = \scComposer
+    copyright = \scCopyright
+    tagline = \scTagline
+  }
+  \score {
+     \new ChoirStaff <<
+       \new Staff = "cantus" << 
+         \new Voice {
+           \scGlobal \scMusicOneClefOrig \scMusicOne
          }
-   
-         \new Staff \with { \consists "Volta_engraver" }
-         \context Voice = scvOne {
-           \set Score.markFormatter = #format-mark-box-letters
-           << \set Staff.midiInstrument = #"oboe"
-           \scGlobal \scMusicOneClefOrig \scMusicOne 	 >> 
+       >>  
+       \new Staff  = "altus" <<
+         \new Voice  {
+           \scGlobal \scMusicTwoClefOrig \scMusicTwo
          }
-         \context Voice = scvTwo { 
-           << \set Staff.midiInstrument = #"oboe"
-           \scGlobal \scMusicTwoClefOrig \scMusicTwo >> 
+       >>  
+       \new Staff = "tenor"  <<
+         \new Voice  {
+           \scGlobal \scMusicThreeClefOrig \scMusicThree
          }
-   
-         \context Voice = scvThree { 
-           << \set Staff.midiInstrument = #"oboe"
-           \scGlobal \scMusicThreeClefOrig \scMusicThree >> 
+       >> 
+       \new Staff = "bassus" <<
+         \new Voice  {
+           \scGlobal \scMusicFourClefOrig \scMusicFour
          }
-   
-         \context Voice = scvFour { 
-           << \set Staff.midiInstrument = #"oboe"
-           \scGlobal \scMusicFourClefOrig \scMusicFour >> 
+       >>  
+       \new Staff = "quintus" <<
+         \new Voice  {
+           \scGlobal \scMusicFiveClefOrig \scMusicFive
          }
-
-         \context Voice = scvFive { 
-           << \set Staff.midiInstrument = #"oboe"
-           \scGlobal \scMusicFiveClefOrig \scMusicFive >> 
-         }
-   
-       >>
-   
-     >>
-   
-     \include "../include/sc_layout.ly"
-     \include "../include/sc_midi.ly"
-   }
+       >>  
+     >>      
+  
+    \include "../include/sc_layout.ly"
+  }
 }
-
 \book {
-   \bookOutputSuffix "modern_clef"
-   \header{                                                                
-     title = \scTitle
-     subtitle = \scSubtitle
-     meter = \scMeter
-     poet = \scPoet
-     composer = \scComposer
-     copyright = \scCopyright
-     tagline = \scTagline
-   }
-   \score {
-     <<
-       \context ChoirStaff 
-       <<
-         \context ChordNames = chordcontext { 
-           \set chordNameExceptions = #chExceptions
-           \set ChordNames.midiInstrument = #"harpsichord"
-           << 
-             \scGlobal \transpose c' c \scChordLine 
-           >>
+  #(ly:set-option 'midi-extension "mid")
+  \bookOutputName #(string-append filename "_modern_clef")
+  \include "../include/sc_paper.ly"
+  \header{                                                                
+    title = \scTitle
+    subtitle = \scSubtitle
+    meter = \scMeter
+    poet = \scPoet
+    composer = \scComposer
+    copyright = \scCopyright
+    tagline = \scTagline
+  }
+  \score {
+     \new ChoirStaff <<
+       \new Staff = "cantus" << 
+         \new Voice {
+           \scGlobal \scMusicOneClefModern \scMusicOne
          }
-   
-         \new Staff \with { \consists "Volta_engraver" }
-         \context Voice = scvOne {
-           \set Score.markFormatter = #format-mark-box-letters
-           << \set Staff.midiInstrument = #"oboe"
-           \scGlobal \scMusicOneClefModern \scMusicOne 	 >> 
+       >>  
+       \new Staff  = "altus" <<
+         \new Voice  {
+           \scGlobal \scMusicTwoClefModern \scMusicTwo
          }
-         \context Voice = scvTwo { 
-           << \set Staff.midiInstrument = #"oboe"
-           \scGlobal \scMusicTwoClefModern \scMusicTwo >> 
+       >>  
+       \new Staff = "tenor"  <<
+         \new Voice  {
+           \scGlobal \scMusicThreeClefModern \scMusicThree
          }
-   
-         \context Voice = scvThree { 
-           << \set Staff.midiInstrument = #"oboe"
-           \scGlobal \scMusicThreeClefModern \scMusicThree >> 
+       >> 
+       \new Staff = "bassus" <<
+         \new Voice  {
+           \scGlobal \scMusicFourClefModern \scMusicFour
          }
-   
-         \context Voice = scvFour { 
-           << \set Staff.midiInstrument = #"oboe"
-           \scGlobal \scMusicFourClefModern \scMusicFour >> 
+       >>  
+       \new Staff = "quintus" <<
+         \new Voice  {
+           \scGlobal \scMusicFiveClefOrig \scMusicFive
          }
-   
-         \context Voice = scvFive { 
-           << \set Staff.midiInstrument = #"oboe"
-           \scGlobal \scMusicFiveClefModern \scMusicFive >> 
+       >>  
+     >>      
+  
+    \include "../include/sc_layout.ly"
+  }
+}
+\book {
+  \bookOutputName \filename
+  \score {
+     \new ChoirStaff <<
+       \new Staff = "cantus" << 
+         \set Staff.midiInstrument = #"oboe"
+         \new Voice {
+           \scGlobal \scMusicOneClefModern \unfoldRepeats{ \scMusicOne }
          }
-       >>
-   
-     >>
-   
-     \include "../include/sc_layout.ly"
-   }
+       >>  
+       \new Staff  = "altus" <<
+         \set Staff.midiInstrument = #"oboe"
+         \new Voice  {
+           \scGlobal \scMusicTwoClefModern \unfoldRepeats{ \scMusicTwo }
+         }
+       >>  
+       \new Staff = "tenor"  <<
+         \set Staff.midiInstrument = #"oboe"
+         \new Voice  {
+           \scGlobal \scMusicThreeClefModern \unfoldRepeats{ \scMusicThree} 
+         }
+       >> 
+       \new Staff = "bassus" <<
+         \set Staff.midiInstrument = #"oboe"
+         \new Voice  {
+           \scGlobal \scMusicFourClefModern \unfoldRepeats{ \scMusicFour }
+         }
+       >>  
+       \new Staff = "quintus" <<
+         \set Staff.midiInstrument = #"oboe"
+         \new Voice  {
+           \scGlobal \scMusicFiveClefOrig \unfoldRepeats{ \scMusicFive }
+         }
+       >>  
+     >>      
+     \midi{
+       \context {
+         \Score
+           tempoWholesPerMinute = \scTempo
+       }
+    }
+  }
 }

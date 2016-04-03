@@ -11,7 +11,8 @@
      tagline = \scTagline
    }
    \score {
-      \new ChoirStaff <<
+      \new ChoirStaff 
+        <<
         \new Staff = "cantus" << 
           \new Voice {
             \scGlobal \scMusicOneClefOrig \scMusicOne
@@ -27,7 +28,12 @@
             \scGlobal \scMusicThreeClefOrig \scMusicThree
           }
         >> 
-      >>      
+        \new Staff = "bassus" <<
+          \new Voice  {
+            \scGlobal \scMusicFourClefOrig \scMusicFour
+          }
+        >>  
+    >>      
    
      \include "../include/sc_layout.ly"
    }
@@ -46,23 +52,19 @@
      tagline = \scTagline
    }
    \score {
-      \new ChoirStaff <<
+      \new ChoirStaff 
+        <<
         \new Staff = "cantus" << 
           \new Voice {
             \scGlobal \scMusicOneClefModern \scMusicOne
           }
         >>  
-        \new Staff  = "altus" <<
+        \new Staff = "bassus" <<
           \new Voice  {
             \scGlobal \scMusicTwoClefModern \scMusicTwo
           }
         >>  
-        \new Staff = "tenor"  <<
-          \new Voice  {
-            \scGlobal \scMusicThreeClefModern \scMusicThree
-          }
-        >> 
-      >>      
+    >>      
    
      \include "../include/sc_layout.ly"
    }
@@ -70,31 +72,26 @@
 \book {
    \bookOutputName \filename
    \score {
-      \new ChoirStaff <<
+      \new ChoirStaff 
+        <<
         \new Staff = "cantus" << 
           \set Staff.midiInstrument = #"oboe"
           \new Voice {
             \scGlobal \scMusicOneClefModern \unfoldRepeats{ \scMusicOne }
           }
         >>  
-        \new Staff  = "altus" <<
+        \new Staff = "bassus" <<
           \set Staff.midiInstrument = #"oboe"
           \new Voice  {
             \scGlobal \scMusicTwoClefModern \unfoldRepeats{ \scMusicTwo }
           }
         >>  
-        \new Staff = "tenor"  <<
-          \set Staff.midiInstrument = #"oboe"
-          \new Voice  {
-            \scGlobal \scMusicThreeClefModern \unfoldRepeats{ \scMusicThree} 
-          }
-        >> 
-      >>      
-      \midi{
-        \context {
-          \Score
-            tempoWholesPerMinute = \scTempo
-        }
-      }
+    >>      
+    \midi{
+       \context {
+         \Score
+         tempoWholesPerMinute = \scTempo
+       }
+    }
    }
 }

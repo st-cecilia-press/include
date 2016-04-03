@@ -13,6 +13,4 @@
      \override ChordName #'font-size = #-1 
      \override ChordName #'font-series = #'bold 
   } 
-  ragged-bottom=##t
-  ragged-last-bottom=##t
 }
