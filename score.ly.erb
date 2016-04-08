@@ -76,7 +76,7 @@ class ScoreFile
 end
 
 numbers = ['One','Two','Three','Four','Five']
-1.upTo(5){ |n| 
-  score = ScoreFile.new(numbers[0..#{n-1}], get_template)
+1.upto(5){ |n| 
+  score = ScoreFile.new(numbers[0..n-1], get_template)
   score.save("./sc_a#{n}.ly")
 }
