@@ -1,0 +1,82 @@
+require 'erb'
+def get_template()
+  %q{\book {
+      <% if @midi  %>
+      #(ly:set-option 'midi-extension "mid")
+      <% else %>
+      \bookOutputName #(string-append filename "<%=@suffix%>")
+      <% end %>
+      \header{
+        title = \scTitle
+        subtitle = \scSubtitle
+        meter = \scMeter
+        poet = \scPoet
+        composer = \scComposer
+        copyright = \scCopyright
+        tagline = \scTagline
+      }
+      \score {
+        \new ChoirStaff <<
+         <% for @part in @parts %>
+          \new Staff = \scMusic<%= @part %>Name <<
+            <% if @midi %>
+            \set Staff.midiInstrument = #"oboe"
+            <% end %>
+            \new Voice {
+              \scGlobal \scMusic<%= @part %>Clef<%= @clefType %> 
+              <% if @midi %>
+                \unfoldRepeats{ \scMusic<%= @part %> }
+              <% else %>
+                \scMusic<%= @part %>
+              <% end %>
+            }
+          >>
+         <% end %>
+        >>
+        \include "../include/<%=@filename%>.ly"
+      }
+    }
+  }
+end
+
+class ScoreFile
+  include ERB::Util
+
+  def initialize(parts, template)
+    @parts = parts
+    @template = template 
+  end
+
+  def render()
+    ERB.new(@template).result(binding)
+  end
+
+  def save(file)
+    File.open(file, "w+") do |f|
+      @midi = false
+      @suffix = '_orig_clef'
+      @clefType = 'Orig'
+      @filename= 'sc_layout'
+      f.write(render)
+
+      @midi = false
+      @suffix = '_modern_clef'
+      @clefType = 'Modern'
+      @filename= 'sc_layout'
+      f.write(render)
+
+      @midi = true
+      @suffix = '_modern_clef'
+      @clefType = 'Modern'
+      @filename= 'sc_midi'
+      f.write(render)
+    end
+  end
+
+end
+
+numbers = ['One','Two','Three','Four','Five']
+1.upTo(5){ |n| 
+  score = ScoreFile.new(numbers[0..#{n-1}], get_template)
+  score.save("./sc_a#{n}.ly")
+}
