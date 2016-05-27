@@ -5,6 +5,7 @@ def get_template()
       #(ly:set-option 'midi-extension "mid")
       <% else %>
       \bookOutputName #(string-append filename "<%=@suffix%>")
+      \include "../include/sc_paper.ly"
       <% end %>
       \header{
         title = \scTitle

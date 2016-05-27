@@ -1,6 +1,7 @@
 \book {
       
       \bookOutputName #(string-append filename "_orig_clef")
+      \include "../include/sc_paper.ly"
       
       \header{
         title = \scTitle
@@ -71,6 +72,7 @@
   \book {
       
       \bookOutputName #(string-append filename "_modern_clef")
+      \include "../include/sc_paper.ly"
       
       \header{
         title = \scTitle
