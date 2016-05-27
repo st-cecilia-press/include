@@ -1,0 +1,131 @@
+require 'erb'
+def get_template()
+  %q{\book {
+      <% if @transposed %>
+      \bookOutputSuffix "transposed"
+      <% end %>
+      \paper {
+        print-page-number = ##f
+        print-first-page-number = ##f
+        top-margin = 0.5\in
+        left-margin = 0.5\in
+        right-margin = 0.5\in
+        oddFooterMarkup = \markup { 
+        \column{
+          \fill-line { \line {
+            \italic \fromproperty #'header:title
+            " - Page"
+            \fromproperty #'page:page-number-string
+          } } 
+      	\fill-line { \tiny { \line{ Edition Date: \scDate } } } }
+        }
+        
+        evenFooterMarkup = \oddFooterMarkup
+      }
+
+      \header{
+        title = \scTitle
+        subtitle = \scSubtitle
+        meter = \scMeter
+        poet = \scPoet
+        composer = \scComposer
+        arranger = \scArranger
+        copyright = \scCopyright
+        tagline = \scTagline
+      }
+      \score {
+        \new ChoirStaff <<
+         <% for @part in @parts %>
+          \new Staff = \scMusic<%= @part %>Name <<
+            \set Staff.midiInstrument = #"oboe"
+            \new Voice = "<%=@part.downcase%>" {
+              <%if @transposed %>
+              \transpose \scTransposeFrom \scTransposeTo { 
+              <% end %>
+              \scGlobal 
+              <% if @transposed %>
+               \scMusic<%= @part %>ClefTransposed
+              <% else %>
+               \scMusic<%= @part %>Clef
+              <% end %>
+                \scMusic<%= @part %>
+              <% if  @transposed %> } <% end %>
+              
+            }
+            <% if @verses %>
+            <<
+              
+              <% suffix = 'A' %>
+              <% 1.upto(@verses){ |n| %>
+                \new Lyrics \lyricsto "<%=@part.downcase%>" { \scWords<%=@part%><%=suffix%> } 
+                <% suffix.next! %>
+              <% } %>
+            >>
+            <% end %>
+          >>
+         <% end %>
+        >>
+        \layout {
+          
+            indent = 0\mm
+              \context {
+                \Staff
+                  \consists "Ambitus_engraver"
+                }
+        }
+        \midi {
+          \context {
+            \Score
+            tempoWholesPerMinute = \scTempo
+          }
+        }
+      }
+    }
+  }
+end
+
+class ScoreFile
+  include ERB::Util
+
+  def initialize(parts, verses, transposed, template)
+    numbers = ['One','Two','Three','Four','Five','Six','Seven','Eight']
+    @parts = numbers[0.. parts-1]
+    @transposed_flag = transposed
+    @verses = verses
+    @template = template 
+  end
+
+  def render()
+    ERB.new(@template).result(binding)
+  end
+
+  def save(file)
+    File.open(file, "w+") do |f|
+
+      @transposed = false;
+      f.write(render)
+
+      if @transposed_flag
+        @transposed = true;
+        f.write(render)
+      end
+    end
+  end
+
+end
+
+args = ""
+File.open(ARGV[0]).each do |line|
+  args = line.split(' ')
+  args.shift
+  break
+end
+
+parts = args[0].to_i
+verses = args[1].to_i
+transposed = false
+transposed = true if args[2] == "true"
+
+score = ScoreFile.new(parts, verses, transposed, get_template)
+score.save("./score.ly")
+
