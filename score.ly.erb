@@ -1,4 +1,6 @@
 require 'erb'
+require 'json'
+
 def get_template()
   %q{\book {
       <% if @transposed %>
@@ -114,18 +116,15 @@ class ScoreFile
 
 end
 
-args = ""
+args = {}
 File.open(ARGV[0]).each do |line|
-  args = line.split(' ')
-  args.shift
-  break
+  if line.match(/^%score_options/) 
+    line.slice!('%score_options ')
+    args = JSON.parse(line,{symbolize_names: true})
+    break
+  end
 end
 
-parts = args[0].to_i
-verses = args[1].to_i
-transposed = false
-transposed = true if args[2] == "true"
-
-score = ScoreFile.new(parts, verses, transposed, get_template)
+score = ScoreFile.new(args[:parts], args[:verses], args[:transposed], get_template)
 score.save("./score.ly")
 
