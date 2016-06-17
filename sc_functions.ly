@@ -23,3 +23,17 @@ scMarkJ = \markup{ \bold \override #'(box-padding . 0.5) \box \large "J" }
 scMarkK = \markup{ \bold \override #'(box-padding . 0.5) \box \large "K" }
 
 ficta = { \once \set suggestAccidentals = ##t }
+
+dropLyrics = {
+  \override LyricText.extra-offset = #'(0 . -4.5)
+  \override LyricHyphen.extra-offset = #'(0 . -4.5)
+  \override LyricExtender.extra-offset = #'(0 . -4.5)
+  \override StanzaNumber.extra-offset = #'(0 . -4.5)
+}
+
+raiseLyrics = {
+  \revert LyricText.extra-offset
+  \revert LyricHyphen.extra-offset
+  \revert LyricExtender.extra-offset
+  \revert StanzaNumber.extra-offset
+}

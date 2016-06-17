@@ -1,17 +1,31 @@
 require 'erb'
 require 'json'
+require 'optparse'
 
 def get_template()
-  %q{\book {
+%q{
+
+    <% if @transposed %>
+      #(set-global-staff-size scStaffSizeTranspose )
+    <% else %>
+      #(set-global-staff-size scStaffSize )
+    <% end %>
+    \book {
       <% if @transposed %>
       \bookOutputSuffix "transposed"
       <% end %>
       \paper {
+        <% if @transposed %>
+          system-system-spacing.minimum-distance = \scMinimumSystemSpacingTranspose
+        <% else %>
+          system-system-spacing.minimum-distance = \scMinimumSystemSpacing
+        <% end %>
         print-page-number = ##f
         print-first-page-number = ##f
         top-margin = 0.5\in
         left-margin = 0.5\in
         right-margin = 0.5\in
+        last-bottom-spacing = #'((basic-distance . 4) (padding . 4) (stretchability . 1))
         oddFooterMarkup = \markup { 
         \column{
           \fill-line { \line {
@@ -67,7 +81,8 @@ def get_template()
           >>
          <% end %>
         >>
-        \layout { }
+        \layout { 
+        }
         \midi {
           \context {
             \Score
@@ -118,6 +133,16 @@ File.open(ARGV[0]).each do |line|
   end
 end
 
+options = {output: "./score.ly"}
+
+OptionParser.new do |parser|
+    parser.on("-o", "--output LOCATION", "Require the Output LOCATION before executing your script") do |output|
+        options[:output] = output
+    end
+end.parse!
+
+
+
 score = ScoreFile.new(args[:parts], args[:verses], args[:transposed], get_template)
-score.save("./score.ly")
+score.save(options[:output])
 
