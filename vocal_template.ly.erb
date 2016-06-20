@@ -1,0 +1,132 @@
+require 'erb'
+require 'json'
+require 'optparse'
+
+def get_template()
+%q{%score_options {"parts": <%=@parts.length%>, "verses": <%=@verses%>, "transposed": <%=@transposed%>}
+scDate = "DATE"
+
+\include "../include/sc_functions.ly"
+\include "../include/sc_layout_vocal.ly"
+<% if @transposed %>
+scStaffSizeTranspose = 19 
+<% end %>
+scStaffSize = 19 
+#(ly:set-option 'midi-extension "mid")
+
+\include "english.ly"
+
+scTempo = #(ly:make-moment 120 4)
+scTitle = ""
+scSubtitle = ""
+scComposer = ""
+scArranger = ""
+scMeter = ""
+scPoet = ""
+scCopyright = ""
+scTagline = ""
+
+
+
+scGlobal= {
+  \key d \dorian
+  \time 4/2
+  
+}
+
+<% if @transposed %>
+scTransposeFrom =  c 
+scTransposeTo =  g 
+<% end %>
+
+scMinimumSystemSpacingTranspose = #8
+scMinimumSystemSpacing = #8
+
+<% for @part in @parts %>
+scMusic<%=@part[:number]%>Name = "<%=@part[:name]%>"
+scMusic<%=@part[:number]%>Clef = \clef "<%=@part[:clef]%>"
+<% if @transposed %>
+scMusic<%=@part[:number]%>ClefTransposed = \clef "<%=@part[:clef]%>"
+<% end %>
+scMusic<%=@part[:number]%> =   \relative c' {  
+
+}
+<% end %>
+
+
+<% for @part in @parts %>
+  <% suffix = 'A' %>
+  <% 1.upto(@verses){ |n| %>
+scWords<%=@part[:number]%><%=suffix%> = \lyricmode {
+
+}
+    <% suffix.next! %>
+  <% } %>
+<% end %>
+
+\include "./score.ly"
+
+\version "2.18.2"  % necessary for upgrading to future LilyPond versions.
+}
+end
+
+class ScoreFile
+  include ERB::Util
+
+  def initialize(parts, verses, transposed, template)
+    part_structure = [
+      {number: 'One', clef: 'treble', name: 'cantus'},
+      {number: 'Two', clef: 'treble', name: 'altus'},
+      {number: 'Three', clef: 'G_8', name: 'tenor'},
+      {number: 'Four', clef: 'bass', name: 'bassus'},
+      {number: 'Five', clef: 'bass', name: 'quintus'},
+      {number: 'Six', clef: 'treble', name: 'sextus'},
+      {number: 'Seven', clef: 'treble', name: 'septus'},
+      {number: 'Eight', clef: 'treble', name: 'octus'}
+    ]
+    puts part_structure[0]
+    @parts = part_structure[0.. parts-1]
+    @transposed = transposed
+    @verses = verses
+    @template = template 
+  end
+
+  def render()
+    ERB.new(@template).result(binding)
+  end
+
+  def save(file)
+    File.open(file, "w+") do |f|
+        f.write(render)
+    end
+  end
+
+end
+
+
+options = {output: "./vocal_template.ly", parts: 4, verses: 1, transpose: false}
+
+OptionParser.new do |parser|
+    parser.on("-f", "--filename NAME", "Require NAME of output file; Default: 'vocal_template.ly'") do |output|
+        options[:output] = output
+    end
+    parser.on("-p", "--parts NUMBER", "Require NUMBER of parts; Default: 4") do |parts|
+        options[:parts] = parts.to_i
+    end
+    parser.on("-v", "--verses NUMBER", "Require NUMBER of verses; Default: 1") do |verses|
+        options[:verses] = verses.to_i
+    end
+    parser.on("-t", "--transpose", "Sets up template for transposition") do
+        puts "hiya"
+        options[:transpose] = true
+    end
+    parser.on("-h", "--help",  "Prints this Help") do 
+      puts parser
+    end
+end.parse!
+
+
+
+score = ScoreFile.new(options[:parts], options[:verses], options[:transpose], get_template)
+score.save(options[:output])
+
