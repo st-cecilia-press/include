@@ -31,7 +31,7 @@ scTagline = ""
 scGlobal= {
   \key d \dorian
   \time 4/2
-  
+  \autoBeamOff
 }
 
 <% if @transposed %>
@@ -84,7 +84,6 @@ class ScoreFile
       {number: 'Seven', clef: 'treble', name: 'septus'},
       {number: 'Eight', clef: 'treble', name: 'octus'}
     ]
-    puts part_structure[0]
     @parts = part_structure[0.. parts-1]
     @transposed = transposed
     @verses = verses
@@ -117,7 +116,6 @@ OptionParser.new do |parser|
         options[:verses] = verses.to_i
     end
     parser.on("-t", "--transpose", "Sets up template for transposition") do
-        puts "hiya"
         options[:transpose] = true
     end
     parser.on("-h", "--help",  "Prints this Help") do 
