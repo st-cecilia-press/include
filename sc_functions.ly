@@ -31,6 +31,12 @@ dropLyrics = {
   \override StanzaNumber.extra-offset = #'(0 . -4.5)
 }
 
+dropLyricsSmall = {
+  \override LyricText.extra-offset = #'(0 . -1.0)
+  \override LyricHyphen.extra-offset = #'(0 . -1.0)
+  \override LyricExtender.extra-offset = #'(0 . -1.0)
+  \override StanzaNumber.extra-offset = #'(0 . -1.0)
+}
 raiseLyrics = {
   \revert LyricText.extra-offset
   \revert LyricHyphen.extra-offset
