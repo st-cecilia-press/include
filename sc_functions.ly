@@ -43,3 +43,9 @@ raiseLyrics = {
   \revert LyricExtender.extra-offset
   \revert StanzaNumber.extra-offset
 }
+extendLV = #(define-music-function (parser location further) (number?) 
+#{
+   \once \override LaissezVibrerTie.X-extent = #'(0 . 0)
+   \once \override LaissezVibrerTie.details.note-head-gap = #(/ further -2)
+   \once \override LaissezVibrerTie.extra-offset = #(cons (/ further 2) 0)
+#})
