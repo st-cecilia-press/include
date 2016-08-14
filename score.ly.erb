@@ -5,6 +5,7 @@ require 'optparse'
 def get_template()
 %q{
 
+      #(set-default-paper-size "letter")
     <% if @transposed %>
       #(set-global-staff-size scStaffSizeTranspose )
     <% else %>
@@ -23,8 +24,9 @@ def get_template()
         print-page-number = ##f
         print-first-page-number = ##f
         top-margin = 0.5\in
-        left-margin = 0.5\in
-        right-margin = 0.5\in
+        left-margin = 0.75\in
+        right-margin = 0.75\in
+        right-bottom = 0.5\in
         last-bottom-spacing = #'((basic-distance . 4) (padding . 4) (stretchability . 1))
         oddFooterMarkup = \markup { 
         \column{
