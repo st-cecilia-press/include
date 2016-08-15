@@ -16,7 +16,8 @@ end.parse!
 
 midi_file = ARGV.pop
 raise "need input midifile" unless midi_file
-
+no_extension = midi_file.gsub(/\.\w*$/,'')
+`timidity -EFreverb=0 -Ow -o - #{midi_file} | lame - #{no_extension}.mp3` if options[:mp3]
 seq = MIDI::Sequence.new()
 
 tracks = Hash.new()
