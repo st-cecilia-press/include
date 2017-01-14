@@ -1,0 +1,97 @@
+---
+- slug: canconiero_de_palacio
+  name: Canconiero de Palacio
+  archive: Palacio Real, Biblioteca [E-Mp]
+  shelfmark: '1335'
+  diamm: 1157
+  description: 1157
+- slug: bamberg
+  name: Bamberg Codex
+  archive: Staatsbibliothek [D-BAs]
+  shelfmark: Lit. 115
+  diamm: 863
+  description: 863
+- slug: cz_chrm_12580
+  name: CZ-CHRm 12580
+  archive: Mestske Muzeum [CZ-CHRm]
+  shelfmark: '12580'
+  diamm: 1063
+  description: 1063
+- slug: montpellier
+  name: Montpellier Codex
+  archive: Faculté de Médecine [F-MO]
+  shelfmark: H 196
+  diamm: 888
+  description: 888
+- slug: wolfenbuttel
+  name: Wolfenbüttel Chansonnier
+  archive: Herzog August Bibliothek [D-W]
+  shelfmark: Cod. Guelf. 287 Extrav.
+  diamm: 2016
+  description: 2016
+- slug: gb_ob_ms_ashmole_191
+  name: GB-Ob MS. Ashmole 191
+  archive: Bodleian Library [GB-Ob]
+  shelfmark: MS. Ashmole 191
+  diamm: 488
+  description: 488
+- slug: henry_viii
+  name: Henry VIII Manuscript
+  archive: British Library [GB-Lbl]
+  shelfmark: Add. MS 31922
+  diamm: 1238
+  description: 1238
+- slug: selden_carol_book
+  name: The Selden Carol Book
+  archive: Bodleian Library [GB-Ob]
+  shelfmark: MS. Arch. Selden B. 26
+  diamm: 803
+  description: 803
+- slug: agincourt_roll
+  name: Agincourt Roll
+  archive: Trinity College [GB-Ctc]
+  shelfmark: O.3.58
+  diamm: 320
+  description: 320
+- slug: llibre_vermell
+  name: Llibre Vermell
+  archive: Monasterio de S Maria [E-MO]
+  shelfmark: MS 1
+  diamm: 69
+  description: 69
+- slug: carmina_burana
+  name: Carmina Burana
+  archive: Bayerische Staatsbibliothek [D-Mbs]
+  shelfmark: Clm MSS 4660
+  diamm: 
+  description: 
+- slug: gb_lbl_harley_978
+  name: GB-Lbl Harley 978
+  archive: British Library [GB-Lbl]
+  shelfmark: Harley 978
+  diamm: 434
+  description: 434
+- slug: f_pn_fonds_francais_25566
+  name: F-PN fonds français 25566
+  archive: Bibliothèque Nationale [F-PN]
+  shelfmark: fonds français 25566
+  diamm: 896
+  description: 896
+- slug: codex_squarcialupi
+  name: Codex Squarcialupi
+  archive: Biblioteca Medicea-Laurenziana [I-Fl]
+  shelfmark: MS Mediceo Palatino 87
+  diamm: 671
+  description: 671
+- slug: d_leu_ms_1236
+  name: D-LEu MS 1236
+  archive: Universitätsbibliothek [D-LEu]
+  shelfmark: MS 1236
+  diamm: 1865
+  description: 1865
+- slug: gb_occ_ms_59
+  name: GB-Occ MS 59
+  archive: Corpus Christi College [GB-Occ]
+  shelfmark: MS 59
+  diamm: 558
+  description: 558
