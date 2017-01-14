@@ -14,6 +14,9 @@
 - slug: dowland_second_book_of_songs
   title: Second Book of Songs or Ayres
   date: 1600
+- slug: dowland_third_book_of_songs
+  title: The Third and Last Book of Songs or Ayres
+  date: 1603
 - slug: lassus_tiers_livre_des_chansons
   title: TIERS LIVRE DES CHANSONS A QVATRE CINCQ ET six parties, nouuellement composées
     par Orlando di Lassus
@@ -118,3 +121,15 @@
 - slug: susato_unziesme_livre_chansons_amoureuses
   title: L'Unziesme Livre Contenant Vingt & neuf Chansons Amovrevses A Quatre Parties
   date: 1544
+- slug: hundred_und_ainundzweintzig
+  title: Der erst teil. Hundert vnd ainundzweintzig newe Lieder
+  date: 1534
+- slug: east_second_set_of_madrigals
+  title: The Second Set of Madrigales to 3. 4. andn 5. parts (1606)
+  date: 1606 
+- slug: arcadelt_il_primo_libro_di_madrigali_a_4_voci
+  title: Il primo libro di madrigali d'Archadelt a 4 voci
+  date: 1539
+- slug: weelkes_ayres_or_phantasticke
+  title: Ayres or Phantasticke Sprits for Three Voices
+  date: 1608
