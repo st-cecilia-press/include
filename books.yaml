@@ -139,6 +139,12 @@
 - slug: victoria_motecta_libro_1
   title: Thomas Ludiovici de Victoria Abulensis, Motecta, que partim quaternis, partim quinis, alia senis, alia octonis vocibus concinuntur
   date: 1572
+- slug: bartlet_book_of_ayres
+  title: A Book of Ayres 
+  date: 1606
+- slug: ford_musicke_of_sundrie_kindes
+  title: Musicke of sundrie kindes
+  date: 1607
 - slug: palestrina_motettorum_quartet_vocibus_liber_secundus
   title: Ioan Petraloysii Praenestini motettorum quartet vocibus Liber Secundus
   date: 1584
