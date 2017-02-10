@@ -2,34 +2,64 @@
 - slug: bateson_first_set_of_english_madrigals
   title: The First Set of English Madrigals to 3, 4, 5, and 6 Voices
   date: 1604
+  urls:
+  - name: EEBO
+    url: http://gateway.proquest.com.proxy.lib.umich.edu/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99899030
 - slug: ravenscroft_deuteromelia
   title: Deuteromelia
   date: 1609
+  urls:
+  - name: Greg Lindahl's Facsimile
+    url: http://www.pbm.com/~lindahl/ravenscroft/deuteromelia/
 - slug: croce_canzonette_a_tre_voce
   title: Canzonette a Tre Voce
   date: 1601
+  urls:
+  - name: IMSLP
+    url: http://imslp.org/wiki/Canzonette_a_tre_voci_(Croce,_Giovanni)
 - slug: dowland_first_book_of_songs
   title: First Book of Songs or Ayres
   date: 1597
+  urls:
+  - name: IMSLP
+    url: http://imslp.org/wiki/The_Firste_Booke_of_Songes_(Dowland,_John)
 - slug: dowland_second_book_of_songs
   title: Second Book of Songs or Ayres
   date: 1600
+  urls:
+  - name: IMSLP
+    url: http://imslp.org/wiki/The_Second_Book_of_Songes_(Dowland,_John)
 - slug: dowland_third_book_of_songs
   title: The Third and Last Book of Songs or Ayres
   date: 1603
+  urls:
+  - name: IMSLP
+    url: http://imslp.org/wiki/The_Third_Booke_of_Songes_(Dowland,_John)
 - slug: lassus_tiers_livre_des_chansons
   title: TIERS LIVRE DES CHANSONS A QVATRE CINCQ ET six parties, nouuellement composées
     par Orlando di Lassus
   date: 1566
+  urls:
+  - name: Bavarian State Library
+    url: http://stimmbuecher.digitale-sammlungen.de/view?id=bsb00077375
 - slug: youll_canzonets_to_three_voyces
   title: Canzonets to three voyces
   date: 1608
+  urls:
+  - name: EEBO
+    url: http://gateway.proquest.com.proxy.lib.umich.edu/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99837674
 - slug: willaert_motetti_novi_e_chanzoni_franciose
   title: Motetti novi e chanzoni franciose a quatro sopra doi
   date: 1520
+  urls:
+  - name: IMSLP
+    url: http://imslp.org/wiki/Motetti_novi_e_chanzoni_franciose_a_quatro_sopra_doi_(Antico,_Andrea)
 - slug: ravenscroft_a_brief_discourse
   title: A Brief Discourse
   date: 1614
+  urls:
+  - name: Greg Lindahl's Facsimile
+    url: http://www.pbm.com/~lindahl/ravenscroft/brief/
 - slug: praetorius_musae_sione_ix
   title: Musae Sione IX
   date: 1610
@@ -40,108 +70,214 @@
   title: Ein außbund schöner Teutscher Liedlein zu singen, vnd auff allerley Jnstrument,
     zugebrauchen, sonderlich außerlesen
   date: 1560
+  urls:
+  - name: Bavarian State Library
+    url: http://stimmbuecher.digitale-sammlungen.de/view?id=bsb00071945
 - slug: arcadelt_il_primo_libro_di_madrigali
   title: Il primo libro di madrigali d'Archadelt a tre voci
   date: 1542
+  urls:
+  - name: IMSLP
+    url: http://imslp.org/wiki/Madrigali_a_3_voci,_Libro_1_(Arcadelt,_Jacob)
+  - name: Bavarian State Library
+    url: http://stimmbuecher.digitale-sammlungen.de/view?id=bsb00075017
 - slug: phalese_premier_livre_du_recueil_des_fleurs
   title: Premier Livre Dv Recveil Des Flevrs Prodvictes De La Divine Mvsicqve a Trois
     Parties De par Clemens non Papa Thomas Cricquillon & aultres excellens Musichiens
   date: 1560
+  urls: 
+  - name: Bavarian State Library
+    url: http://stimmbuecher.digitale-sammlungen.de/view?id=bsb00071974
 - slug: attaignant_37_chansons_musicales
   title: 37 Chansons musicales a quatre parties
   date: 1528
+  urls:
+  - name: IMSLP
+    url: http://imslp.org/wiki/37_Chansons_musicales_a_quatre_parties_(Attaingnant,_Pierre)
 - slug: morley_first_book_of_balletts
   title: The First book of Balletts to Five Voyces
   date: 1595
+  urls:
+  - name: IMSLP
+    url: http://imslp.org/wiki/Balletts_to_Five_Voyces,_Book_1_(Morley,_Thomas)
 - slug: attaignant_51_galliards_pavans_bransles_and_basse_dances
   title: 51 Galliards, Pavans, Bransles and Basse Dances
   date: 1530
+  urls:
+  - name: IMSLP
+    url: http://imslp.org/wiki/51_Galliards,_Pavans,_Branles_and_Basse_Dances_(Attaingnant,_Pierre)
 - slug: le_roy_ballard_tiers_livre_de_chansons
   title: Tiers Livre de chansons à quatre parties de Ja. Arcadet et autres.
   date: 1567
+  urls:
+  - name: BNF (Superius Book)
+    url: http://gallica.bnf.fr/ark:/12148/btv1b8562464w/f9.image
+  - name: Royal Holloway Repository 
+    url: https://repository.royalholloway.ac.uk/items/13da21c9-6864-b0f8-115c-3dcb320f7665/1/treenav.jsp?tempwn.b=close
 - slug: orchesographie
   title: Orchesographie
   date: 1589
+  urls:
+  - name: Library of Congress
+    url: https://memory.loc.gov/cgi-bin/ampage?collId=musdi&fileName=219//musdi219.db&recNum=3&itemLink=r?ammem/musdibib:@field(NUMBER+@od1(musdi+219))&linkText=0
 - slug: morley_madrigals_to_4_voyces
   title: Madrigals to Foure Voyces
   date: 1594
+  urls:
+  - name: IMSLP
+    url: http://imslp.org/wiki/Madrigals_to_4_voyces,_Book_1_(Morley,_Thomas)
 - slug: petrucci_frottole_iii
   title: Frottolle Libro Tertio
   date: 1504
+  urls:
+  - name: EEBO
+    url: 
 - slug: attaignant_chansons_nouvelles_tiers_livre
   title: Tiers liure contenant xxix. Chansons NOVVELLES A QVATRE PARTIES
   date: 1540
+  urls:
+  - name: EEBO
+    url: 
 - slug: gibbons_first_set_of_madrigals
   title: The First Set of Madrigals and Mottets of 5 Parts Newly Composed by Orlando
     Gibbons
   date: 1612
+  urls:
+  - name: EEBO
+    url: 
 - slug: lassus_libro_de_villanelle
   title: Libro de villanelle, moresche, ed altre canzoni
   date: 1582
+  urls:
+  - name: EEBO
+    url: 
 - slug: farmer_first_book_of_madrigals
   title: 'The first set of English madrigals to foure voices: newly composed by Iohn
     Farmer'
   date: 1599
+  urls:
+  - name: EEBO
+    url: 
 - slug: bennet_madrigals_to_four_voices
   title: Madrigals to Four Voyces newly published by John Bennet
   date: 1599
+  urls:
+  - name: EEBO
+    url: 
 - slug: ravenscroft_pammelia
   title: Pammelia
   date: 1609
+  urls:
+  - name: EEBO
+    url: 
 - slug: byrd_gradualia
   title: Graudualia Cantiones Sacrae
   date: 1610
+  urls:
+  - name: EEBO
+    url: 
 - slug: attaignant_31_chansons_musicale
   title: Trente et une Chansons Musicale
   date: 1529
+  urls:
+  - name: EEBO
+    url: 
 - slug: attaignant_chansons_vieilles_esleves_iii
   title: Tiers livre contenant xxx. Chansons vieilles esleves
   date: 1538
+  urls:
+  - name: EEBO
+    url: 
 - slug: azzaiolo_primo_libro_de_viollotte
   title: Il Primo Libro de Villotte alla Padoana con alcune Napolitane a quatro voci
     intitolate Villotte del fiore
   date: 1564
+  urls:
+  - name: EEBO
+    url: 
 - slug: morley_canzonettes_to_three_voyces_1606
   title: Canzonets to Three Voyces
   date: 1606
+  urls:
+  - name: EEBO
+    url: 
 - slug: wilbye_first_set_of_madrigals
   title: 'The First Set of English Madrigals to 3, 4, 5, and 6 voices: Newly Composed
     by John Wilbye'
   date: 1598
+  urls:
+  - name: EEBO
+    url: 
 - slug: wilbye_second_set_of_madrigals
   title: 'The Second Set of English Madrigals to 3, 4, 5, and 6 voices: Newly Composed
     by John Wilbye'
   date: 1609
+  urls:
+  - name: EEBO
+    url: 
 - slug: vecchi_libro_secondo
   title: Canzonette di Oratio Vecchi da Modona Libro Secondo a Quattro Voci
   date: 1585
+  urls:
+  - name: EEBO
+    url: 
 - slug: gervaise_quart_livre_de_danceries
   title: Quart Livre De Danceries
   date: 1550
+  urls:
+  - name: EEBO
+    url: 
 - slug: susato_unziesme_livre_chansons_amoureuses
   title: L'Unziesme Livre Contenant Vingt & neuf Chansons Amovrevses A Quatre Parties
   date: 1544
+  urls:
+  - name: EEBO
+    url: 
 - slug: hundred_und_ainundzweintzig
   title: Der erst teil. Hundert vnd ainundzweintzig newe Lieder
   date: 1534
+  urls:
+  - name: EEBO
+    url: 
 - slug: east_second_set_of_madrigals
   title: The Second Set of Madrigales to 3. 4. andn 5. parts (1606)
   date: 1606 
+  urls:
+  - name: EEBO
+    url: 
 - slug: arcadelt_il_primo_libro_di_madrigali_a_4_voci
   title: Il primo libro di madrigali d'Archadelt a 4 voci
   date: 1539
+  urls:
+  - name: EEBO
+    url: 
 - slug: weelkes_ayres_or_phantasticke
   title: Ayres or Phantasticke Sprits for Three Voices
   date: 1608
+  urls:
+  - name: EEBO
+    url: 
 - slug: attaingnant_chansons_musicales_tiers_livre
   title: Tiers livre contenant xxi. Chansons musicales a quatre/parties composeez par Jennequin & Passereau
   date: 1536
+  urls:
+  - name: EEBO
+    url: 
 - slug: victoria_motecta_libro_1
   title: Thomas Ludiovici de Victoria Abulensis, Motecta, que partim quaternis, partim quinis, alia senis, alia octonis vocibus concinuntur
   date: 1572
+  urls:
+  - name: EEBO
+    url: 
 - slug: bartlet_book_of_ayres
   title: A Book of Ayres 
   date: 1606
+  urls:
+  - name: EEBO
+    url: 
 - slug: ford_musicke_of_sundrie_kindes
   title: Musicke of sundrie kindes
   date: 1607
+  urls:
+  - name: EEBO
+    url: 
