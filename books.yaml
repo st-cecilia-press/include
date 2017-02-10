@@ -4,7 +4,7 @@
   date: 1604
   urls:
   - name: EEBO
-    url: http://gateway.proquest.com.proxy.lib.umich.edu/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99899030
+    url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99899030
 - slug: ravenscroft_deuteromelia
   title: Deuteromelia
   date: 1609
@@ -47,7 +47,7 @@
   date: 1608
   urls:
   - name: EEBO
-    url: http://gateway.proquest.com.proxy.lib.umich.edu/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99837674
+    url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99837674
 - slug: willaert_motetti_novi_e_chanzoni_franciose
   title: Motetti novi e chanzoni franciose a quatro sopra doi
   date: 1520
@@ -157,13 +157,13 @@
   date: 1599
   urls:
   - name: EEBO
-    url: http://gateway.proquest.com.proxy.lib.umich.edu/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99837648 
+    url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99837648 
 - slug: bennet_madrigals_to_four_voices
   title: Madrigals to Four Voyces newly published by John Bennet
   date: 1599
   urls:
   - name: EEBO
-    url: http://gateway.proquest.com.proxy.lib.umich.edu/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99840291
+    url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99840291
 - slug: ravenscroft_pammelia
   title: Pammelia
   date: 1609
@@ -213,7 +213,7 @@
   - name: IMSLP
     url: http://imslp.org/wiki/The_Second_Set_of_Madrigales_(Wilbye,_John)
   - name: EEBO
-    url: http://gateway.proquest.com.proxy.lib.umich.edu/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99847027
+    url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99847027
 - slug: vecchi_libro_secondo
   title: Canzonette di Oratio Vecchi da Modona Libro Secondo a Quattro Voci
   date: 1585
@@ -243,7 +243,7 @@
   date: 1606 
   urls:
   - name: EEBO
-    url: http://gateway.proquest.com.proxy.lib.umich.edu/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99891433
+    url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99891433
 - slug: arcadelt_il_primo_libro_di_madrigali_a_4_voci
   title: Il primo libro di madrigali d'Archadelt a 4 voci
   date: 1539
@@ -255,7 +255,7 @@
   date: 1608
   urls:
   - name: EEBO
-    url: http://gateway.proquest.com.proxy.lib.umich.edu/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99854945
+    url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99854945
 - slug: attaingnant_chansons_musicales_tiers_livre
   title: Tiers livre contenant xxi. Chansons musicales a quatre/parties composeez par Jennequin & Passereau
   date: 1536
@@ -273,13 +273,13 @@
   date: 1606
   urls:
   - name: EEBO
-    url: http://gateway.proquest.com.proxy.lib.umich.edu/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99842355
+    url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99842355
 - slug: ford_musicke_of_sundrie_kindes
   title: Musicke of sundrie kindes
   date: 1607
   urls:
   - name: EEBO
-    url: http://gateway.proquest.com.proxy.lib.umich.edu/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99856219
+    url: http://gateway.proquest.com/openurl?ctx_ver=Z39.88-2003&res_id=xri:eebo&rft_id=xri:eebo:citation:99856219
 - slug: palestrina_motettorum_quartet_vocibus_liber_secundus
   title: Ioan Petraloysii Praenestini motettorum quartet vocibus Liber Secundus
   date: 1584
