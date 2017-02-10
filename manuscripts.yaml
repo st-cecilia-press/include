@@ -5,12 +5,18 @@
   shelfmark: '1335'
   diamm: 1157
   description: 1157
+  urls:
+  - name: IMSLP
+    url: http://imslp.org/wiki/Cancionero_Musical_de_Palacio_(Various)
 - slug: bamberg
   name: Bamberg Codex
   archive: Staatsbibliothek [D-BAs]
   shelfmark: Lit. 115
   diamm: 863
   description: 863
+  urls:
+  - name: State Library of Bamberg
+    url: http://www.nbn-resolving.de/urn:nbn:de:bvb:22-dtl-0000002752
 - slug: cz_chrm_12580
   name: CZ-CHRm 12580
   archive: Mestske Muzeum [CZ-CHRm]
@@ -23,66 +29,99 @@
   shelfmark: H 196
   diamm: 888
   description: 888
+  urls:
+  - name: Bibliothèque Interuniversitaire Médecine de Montpellier
+    url: https://manuscrits.biu-montpellier.fr/vignettem.php?GENRE%5B%5D=MP&ETG=OR&ETT=OR&ETM=OR&BASE=manuf
 - slug: wolfenbuttel
   name: Wolfenbüttel Chansonnier
   archive: Herzog August Bibliothek [D-W]
   shelfmark: Cod. Guelf. 287 Extrav.
   diamm: 2016
   description: 2016
+  urls:
+  - name: Wolfenbütteler Digitale Bibliothek
+    url: http://diglib.hab.de/mss/287-extrav/start.htm
 - slug: gb_ob_ms_ashmole_191
   name: GB-Ob MS. Ashmole 191
   archive: Bodleian Library [GB-Ob]
   shelfmark: MS. Ashmole 191
   diamm: 488
   description: 488
+  urls:
+  - name: DIAMM
+    url: http://www.diamm.ac.uk/jsp/Descriptions?op=SOURCE&sourceKey=488#imageList
 - slug: henry_viii
   name: Henry VIII Manuscript
   archive: British Library [GB-Lbl]
   shelfmark: Add. MS 31922
   diamm: 1238
   description: 1238
+  urls:
+  - name: DIAMM
+    url: http://www.diamm.ac.uk/jsp/Descriptions?op=SOURCE&sourceKey=1238#imageList
 - slug: selden_carol_book
   name: The Selden Carol Book
   archive: Bodleian Library [GB-Ob]
   shelfmark: MS. Arch. Selden B. 26
   diamm: 803
   description: 803
+  urls:
+  - name: Bodleian Library
+    url: http://bodley30.bodley.ox.ac.uk:8180/luna/servlet/s/jm86x1
 - slug: agincourt_roll
   name: Agincourt Roll
   archive: Trinity College [GB-Ctc]
   shelfmark: O.3.58
   diamm: 320
   description: 320
+  urls:
+  - name: DIAMM
+    url: http://www.diamm.ac.uk/jsp/Descriptions?op=SOURCE&sourceKey=320#imageList
 - slug: llibre_vermell
   name: Llibre Vermell
   archive: Monasterio de S Maria [E-MO]
   shelfmark: MS 1
   diamm: 69
   description: 69
+  urls:
+  - name: IMSLP
+    url: http://imslp.org/wiki/Llibre_Vermell_de_Montserrat_(Various)
 - slug: carmina_burana
   name: Carmina Burana
   archive: Bayerische Staatsbibliothek [D-Mbs]
   shelfmark: Clm MSS 4660
   diamm: 
   description: 
+  urls:
+  - name: Bavarian State Library
+    url: http://stimmbuecher.digitale-sammlungen.de/view?id=bsb00085130
 - slug: gb_lbl_harley_978
   name: GB-Lbl Harley 978
   archive: British Library [GB-Lbl]
   shelfmark: Harley 978
   diamm: 434
   description: 434
+  urls:
+  - name: DIAMM
+    url: http://www.diamm.ac.uk/jsp/Descriptions?op=SOURCE&sourceKey=434#imageList
 - slug: f_pn_fonds_francais_25566
   name: F-PN fonds français 25566
   archive: Bibliothèque Nationale [F-PN]
   shelfmark: fonds français 25566
   diamm: 896
   description: 896
+  urls:
+  - name: BNF
+    url: http://gallica.bnf.fr/ark:/12148/btv1b6001348v
 - slug: codex_squarcialupi
   name: Codex Squarcialupi
   archive: Biblioteca Medicea-Laurenziana [I-Fl]
   shelfmark: MS Mediceo Palatino 87
   diamm: 671
   description: 671
+  urls:
+  - name: IMSLP
+    url: http://imslp.org/wiki/Squarcialupi_Codex_(Various)
 - slug: d_leu_ms_1236
   name: D-LEu MS 1236
   archive: Universitätsbibliothek [D-LEu]
@@ -95,3 +134,6 @@
   shelfmark: MS 59
   diamm: 558
   description: 558
+  urls:
+  - name: DIAMM
+    url: http://www.diamm.ac.uk/jsp/Descriptions?op=SOURCE&sourceKey=558
