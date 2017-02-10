@@ -130,21 +130,21 @@
   title: Frottolle Libro Tertio
   date: 1504
   urls:
-  - name: EEBO
-    url: 
+  - name: IMSLP
+    url: http://imslp.org/wiki/Frottole,_Books_1-11_(Petrucci,_Ottaviano)
 - slug: attaignant_chansons_nouvelles_tiers_livre
   title: Tiers liure contenant xxix. Chansons NOVVELLES A QVATRE PARTIES
   date: 1540
   urls:
-  - name: EEBO
-    url: 
+  - name: Bavarian State Library
+    url: http://stimmbuecher.digitale-sammlungen.de/view?id=bsb00086196
 - slug: gibbons_first_set_of_madrigals
   title: The First Set of Madrigals and Mottets of 5 Parts Newly Composed by Orlando
     Gibbons
   date: 1612
   urls:
-  - name: EEBO
-    url: 
+  - name: IMSLP
+    url: http://imslp.org/wiki/Madrigals_and_Motets_for_5_Voices_(Gibbons,_Orlando)
 - slug: lassus_libro_de_villanelle
   title: Libro de villanelle, moresche, ed altre canzoni
   date: 1582
