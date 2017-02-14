@@ -132,6 +132,12 @@
   urls:
   - name: IMSLP
     url: http://imslp.org/wiki/Frottole,_Books_1-11_(Petrucci,_Ottaviano)
+- slug: attaignant_chansons_nouvelles_quart_livre
+  title: Quart livre contenant xxvii. Chansons nouvelles a quatre parties
+  date: 1538    
+  urls:
+  - name: Herzog August Bibliothek
+    url: http://opac.lbs-braunschweig.gbv.de/DB=2/XMLPRS=N/PPN?PPN=378528106
 - slug: attaignant_chansons_nouvelles_tiers_livre
   title: Tiers liure contenant xxix. Chansons NOVVELLES A QVATRE PARTIES
   date: 1540
@@ -286,3 +292,9 @@
   urls:
   - name: Memòria Digital de Catalunya
     url: http://mdc.cbuc.cat/cdm/ref/collection/partiturBC/id/5641
+- slug: morley_plain_and_easy
+  title: A plaine and easie introduction to practicall musicke
+  date: 1597
+  urls:
+  - name: IMSLP
+    url: http://imslp.org/wiki/A_Plain_and_Easy_Introduction_to_Practical_Music_(Morley,_Thomas)
