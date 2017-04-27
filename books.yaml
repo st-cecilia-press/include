@@ -126,6 +126,14 @@
   urls:
   - name: IMSLP
     url: http://imslp.org/wiki/Madrigals_to_4_voyces,_Book_1_(Morley,_Thomas)
+- slug: petrucci_frottole_i
+  title: Frottolle Libro Primo
+  date: 1504
+  urls:
+  - name: IMSLP
+    url: http://imslp.org/wiki/Frottole,_Books_1-11_(Petrucci,_Ottaviano)
+  - name: Bavaraian State Library
+    url: http://stimmbuecher.digitale-sammlungen.de/view?id=bsb00082307
 - slug: petrucci_frottole_iii
   title: Frottolle Libro Tertio
   date: 1504
