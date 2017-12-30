@@ -55,7 +55,7 @@
   description: 'non-music MS with interpolated music , 15th century: c.1445-60; provenance: England'
   urls:
   - name: DIAMM
-    url: http://www.diamm.ac.uk/jsp/Descriptions?op=SOURCE&sourceKey=488#imageList
+    url: https://www.diamm.ac.uk/sources/488/#/images
 - slug: henry_viii
   name: Henry VIII Manuscript
   archive: British Library [GB-Lbl]
@@ -64,7 +64,7 @@
   description: 'manuscript of polyphony , c. 1510-20; provenance: England'
   urls:
   - name: DIAMM
-    url: http://www.diamm.ac.uk/jsp/Descriptions?op=SOURCE&sourceKey=1238#imageList
+    url: https://www.diamm.ac.uk/sources/1238/#/images
 - slug: selden_carol_book
   name: The Selden Carol Book
   archive: Bodleian Library [GB-Ob]
@@ -82,7 +82,7 @@
   description: 'rotulus , Early 15th century; provenance: England'
   urls:
   - name: DIAMM
-    url: http://www.diamm.ac.uk/jsp/Descriptions?op=SOURCE&sourceKey=320#imageList
+    url: https://www.diamm.ac.uk/sources/320/#/images
 - slug: llibre_vermell
   name: Llibre Vermell
   archive: Monasterio de S Maria [E-MO]
@@ -109,7 +109,7 @@
   description: 'non-music MS with interpolated music , Late 13th century; provenance: England'
   urls:
   - name: DIAMM
-    url: http://www.diamm.ac.uk/jsp/Descriptions?op=SOURCE&sourceKey=434#imageList
+    url: https://www.diamm.ac.uk/sources/434/#/images
 - slug: f_pn_fonds_francais_25566
   name: F-PN fonds français 25566
   archive: Bibliothèque Nationale [F-PN]
@@ -142,7 +142,7 @@
   description: 'non-music MS with interpolated music , 13th century; provenance: England'
   urls:
   - name: DIAMM
-    url: http://www.diamm.ac.uk/jsp/Descriptions?op=SOURCE&sourceKey=558
+    url: https://www.diamm.ac.uk/sources/558/#/images
 - slug: gb_add_ms_29289
   name: GB-Lbl Add. MS 29289
   archive: British Library [GB-Lbl]
